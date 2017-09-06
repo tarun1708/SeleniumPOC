@@ -10,8 +10,8 @@ public class ViewAccount {
 	public static void execute(WebDriver driver) {
 		TopHeaderElement.clickMyAccount(driver).click();
 		TopHeaderElement.viewMyAccount(driver).click();
-		editPersonalDetails(driver);
-		changePassword(driver);
+		// editPersonalDetails(driver);
+		// changePassword(driver);
 		System.out.println("clicked on my account");
 	}
 
@@ -21,10 +21,11 @@ public class ViewAccount {
 		MyAccountElement.editDetailsBackElement(driver);
 		System.out.println("clicked on back button");
 	}
+
 	private static void verifyPersonalDetails(WebDriver driver) {
-		//MyAccountElement.changePasswordElement(driver);
+		// MyAccountElement.changePasswordElement(driver);
 		System.out.println("verify personal details");
-		
+
 	}
 
 	private static void changePassword(WebDriver driver) {

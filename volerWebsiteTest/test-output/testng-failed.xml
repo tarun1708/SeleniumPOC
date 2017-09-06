@@ -6,8 +6,8 @@
       <class name="framework.PageObjectModel">
         <methods>
           <include name="beforeMethod"/>
-          <include name="loginTest"/>
-          <include name="myAccountTest"/>
+          <include name="updateAddressTest"/>
+          <include name="savedAddressTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- framework.PageObjectModel -->

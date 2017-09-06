@@ -33,5 +33,15 @@ public class DBConfig {
 		return cursor;
 
 	}
+	public static DBCursor cityQuery(String key,String value) {
+		BasicDBObject searchQuery = new BasicDBObject();
+		searchQuery.put(key, value);
+		BasicDBObject field = new BasicDBObject();
+		field.put("availabilityArray",1);
+		field.put("objectId", 1);
+		DBCursor cursor = collection.find(searchQuery,field);
+		return cursor;
+
+	}
 	
 }
